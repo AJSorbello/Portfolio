@@ -232,7 +232,8 @@ button:focus,
   }
 
   .grid__item {
-    background-color: #ffffff;
+    background-color: #c2c2c2;
+    ;
     width: auto;
     min-height: auto;
     margin: 0;

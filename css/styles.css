@@ -2,7 +2,7 @@
   --primary-color: #000000;
   --secondary-color: #796ac1;
   --dark-grey: #2b2b2b;
-  --background-color: #ffffff;
+  --background-color: #c2c2c2;
   --background-secondary-color: #9b9b9a;
   --font-h3: 16px;
   --font-h2: 24px;
@@ -182,13 +182,7 @@ button:focus,
   left: 20px;
 }
 
-/* start grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
 
-/* end grid fallback */
 
 
 @supports (display: grid) {
@@ -200,7 +194,13 @@ button:focus,
     margin: 0;
 
   }
+/* start grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
 
+/* end grid fallback */
   .grid__item {
     background-color: var(--background-color);
     width: auto;
