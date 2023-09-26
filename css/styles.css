@@ -23,13 +23,14 @@ a {
 header {
   border-bottom: 1px solid black;
   margin-bottom: 50px;
-  color: var(--background-header-color);
+ 
 }
 
 footer {
   border-bottom: 1px solid black;
-  margin-bottom: 10px;
-  color: var(--background-footer-color);
+  margin-bottom: 50px;
+  margin-top: 10px;
+  
 }
 
 
@@ -123,6 +124,7 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   list-style: none;
+  flex-wrap: nowrap;
 
 
 }
@@ -142,7 +144,8 @@ button:focus,
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
+  background-color: var(--background-header-color);
 }
 
 .page-header__item {
@@ -164,9 +167,8 @@ button:focus,
   flex-direction: column;
   text-align: center;
   position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
+  
+  background-color: var(--background-footer-color);
 }
 
 .navigation-list {
