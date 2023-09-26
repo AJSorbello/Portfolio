@@ -2,6 +2,8 @@
   --primary-color: #000000;
   --secondary-color: #796ac1;
   --dark-grey: #2b2b2b;
+  --background-color: #ffffff;
+  --background-secondary-color: #e04949;
   --background-color: #c2c2c2;
   --background-secondary-color: #9b9b9a;
   --font-h3: 16px;
@@ -202,7 +204,7 @@ button:focus,
 
 /* end grid fallback */
   .grid__item {
-    background-color: var(--background-color);
+    background-color: var(--background-secondary-color);
     width: auto;
     min-height: auto;
     margin: 0;
