@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --primary-color: #000000;
   --secondary-color: #796ac1;
   --dark-grey: #2b2b2b;
@@ -14,12 +15,32 @@
   --font-weight: 400;
   --text-color: #2b2b2b;
   --button-color: #334343;
+=======
+  --background-color: #dfdfdf;
+  --background-footer-color: #ffffff;
+  --background-header-color: #ffffff;
+  --background-secondary-color: #ffffff;
+  --button-color: #334343;
+  --dark-grey: #2b2b2b;
+  --font-h1: 30px;
+  --font-h2: 24px;
+  --font-h3: 16px;
+  --font-weight: 400;
+  --primary-color: #000000;
+  --secondary-color: #796ac1;
+  --text-color: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+>>>>>>> a793751 (updated portfolio)
 }
 
 a {
   color: var(--primary-color);
 }
 
+<<<<<<< HEAD
 header {
   border-bottom: 1px solid black;
   margin-bottom: 50px;
@@ -28,11 +49,35 @@ header {
 
 body {
   position: relative;
+=======
+a:active {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+body {
+  background-color: #dfdfdf;
+  color: var(--primary-color);
+  font-family: 'Lato', sans-serif;
+  font-size: var(--font-h3);
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+  text-align: center;
+>>>>>>> a793751 (updated portfolio)
 }
 
 body::after {
   content: '';
   display: block;
+<<<<<<< HEAD
   height: 50px; /* Set same as footer's height */
 }
 footer {
@@ -54,6 +99,71 @@ body {
 
 h1 {
   font-size: var(font-h1);
+=======
+  height: 50px;
+}
+
+.button,
+button {
+  background-color: #dfdfdf;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: black;
+  display: inline-block;
+  font-family: inherit;
+  padding: 10px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.button:hover {
+  transform: scale(1.05); /* Enlarges the button a bit */
+}
+
+.button:focus,
+button:focus,
+.button:hover,
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark-grey);
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+}
+
+.grid__item {
+  background-color: var(--background-secondary-color);
+  display: inline-block;
+  margin: 0;
+  min-height: auto;
+  width: 33%;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 2 / 3;
+}
+
+h1 {
+  font-size: 22px;
+>>>>>>> a793751 (updated portfolio)
   font-weight: 700;
 }
 
@@ -67,6 +177,7 @@ h3 {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 a {
   color: var(--primary-color);
 }
@@ -156,6 +267,82 @@ button:focus,
   background-color: var(--background-header-color);
 }
 
+=======
+header {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+.main-content-container {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: auto;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 60px 0;
+}
+
+.navigation-list {
+  list-style-type: none;
+  
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+.navigation-list__item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+.navigation-list__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+.navigation-list__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navigation__logo {
+  left: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.page-footer {
+  background-color: var(--background-footer-color);
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.page-header {
+  text-decoration: none;
+  background-color: var(--background-header-color);
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  text-decoration: none;
+}
+.page-header a:hover {
+  color: #bdbdbd; /* Changes color on hover */
+  transform: scale(1.1); /* Enlarges the link a bit */
+}
+>>>>>>> a793751 (updated portfolio)
 .page-header__item {
   flex: 0 1 200px;
 }
@@ -165,10 +352,31 @@ button:focus,
   text-align: right;
 }
 
+<<<<<<< HEAD
+=======
+.profile {
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.profile__portrait {
+  border-radius: 50%;
+  float: left;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  margin-top: -20px;
+  width: 250px;
+}
+
+>>>>>>> a793751 (updated portfolio)
 .profile__text {
   flex: 1 1 100px;
 }
 
+<<<<<<< HEAD
 .page-footer {
   clear: both;
   display: flex;
@@ -263,6 +471,36 @@ h1 {
   animation: 4s color-change infinite alternate linear;
 }
 
+=======
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+>>>>>>> a793751 (updated portfolio)
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -277,6 +515,7 @@ h1 {
   }
 }
 
+<<<<<<< HEAD
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
@@ -304,3 +543,44 @@ h1 {
     transform: translate(100px, 48px);
   }
 }
+=======
+@media all and (max-width: 500px) {
+  .grid {
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+  }
+
+  .grid__item {
+    background-color: var(--background-secondary-color);
+    margin: 0;
+    min-height: auto;
+    width: auto;
+  }
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+  }
+}
+>>>>>>> a793751 (updated portfolio)
