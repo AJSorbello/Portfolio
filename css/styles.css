@@ -186,6 +186,7 @@ header {
   flex-direction: column;
   position: relative;
   text-align: center;
+  margin-top: 50px;
 }
 
 .page-header {
