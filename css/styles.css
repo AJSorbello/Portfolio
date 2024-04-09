@@ -106,7 +106,15 @@ button:hover {
   width: 33%;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.grid__item-description {
+  flex-grow: 1;
+}
 .grid__item:last-child {
   grid-column: 3 / 3;
   grid-row: 2 / 3;
@@ -140,7 +148,13 @@ header {
   max-width: 800px;
   padding: 60px 0;
 }
-
+#main-content {
+  background-color: white;
+    border: none; /* This will create a border around your content */
+    padding: 20px; /* This will create some space between your content and the border */
+    margin: 10px; /* This will create some space around the border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* This will create a shadow effect */
+}
 .navigation-list {
   list-style-type: none;
   text-decoration: none;
@@ -315,4 +329,11 @@ header {
     grid-column: 3 / 3;
     grid-row: 2 / 3;
   }
+}
+.svg-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
